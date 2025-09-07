@@ -12,6 +12,10 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import ElasticNet
 from urllib.parse import urlparse
+
+import mlflow
+from mlflow import sklearn
+
 import mlflow
 from mlflow.models import infer_signature
 import mlflow.sklearn
@@ -80,7 +84,7 @@ if __name__ == "__main__":
 
         ## For Remote server only(DAGShub)
 
-        remote_server_uri="https://dagshub.com/krishnaik06/mlflowexperiments.mlflow"
+        remote_server_uri="https://dagshub.com/themdanas/MLFlowExperiment.mlflow"
         mlflow.set_tracking_uri(remote_server_uri)
 
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme

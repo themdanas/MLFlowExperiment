@@ -8,9 +8,9 @@ __pycache__/
 # Virtual environments
 venv/
 env/
-.myenv/
-.myenv*/
-myenv1/
+.myenv2/
+.myenv2*/
+myenv2/
 
 # Distribution / packaging
 .Python
